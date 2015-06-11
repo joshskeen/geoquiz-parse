@@ -19,9 +19,13 @@ android {
     }
 }
 
+
 dependencies {
     compile 'com.android.support:appcompat-v7:22.1.0'
-    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
-    compile fileTree(dir: 'libs', include: 'ParseCrashReporting-*.jar')
-    compile files('libs/bolts-android-1.2.0.jar')
+    //load dependency from jitpack
+    compile 'com.github.yongjhih:parse:1.9.2'
+    compile 'com.github.yongjhih:parse-crash-reporting:1.9.2'
+    compile 'com.github.yongjhih:parse-facebook-v3:1.9.2'
+    compile 'com.facebook.android:facebook-android-sdk:3.20.0'
+    compile 'com.parse.bolts:bolts-android:1.1.4'
 }
