@@ -11,9 +11,6 @@ import java.util.List;
 public class QuizQuestionManager {
 
 
-    public QuizQuestionManager() {
-    }
-
     public static void registerParseObjects() {
         ParseObject.registerSubclass(ParseQuizQuestion.class);
     }
